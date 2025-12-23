@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Mulish';
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    display: inline;
+}
+li{
+    list-style: none;
+}
+
+/* header  */
+header {
+    margin: 15px;
+    font-weight: 600;
+    z-index: 1;
+}
+
+nav ul li a {
+    margin-left: 55px;
+    padding: 10px 25px;
+}
+
+.form {
+    background-color: #fd7e14;
+}
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/h1_hero.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+}
+.banner-content{
+    margin-top: 300px;
+}
+.btn a{
+    background-color:#fd7e14;
+
+}
+.btn a:hover{
+background-color:#6f42c1;
+transition: all 0.1s linear;
+}
+.img {
+    margin-top: 32%;
+    margin-left: 40px;
+    padding: 5px 25px;
+    margin-right: 40px;
+}
+.services-title, .about-content h2, .about-content h2{
+    margin-top: 60%;
+    color: #4255A4;
+    font-size: 35px;
+}
+.services-item a{
+    color: #4255A4;
+    font-size: 20px;
+}
+.cons h3{
+    color: #4255A4; 
+    font-size: 24px;
+}
+.ser-ico{
+    margin-top: -18px;
+}
+.icons, .icons p span, .about-icon i{
+    color: #fd7e14;
+}
+.bt{
+    padding: 0px 55px;
+    margin: 10px 5px;
+}
+.bt a:hover{
+    background-color: #fd7e14;
+}
+/* .icons p{
+    color: black;
+} */
+ .about-title i{
+    font-size: 35px;
+    padding: 25px;
+    color: white;
+    background-color:  #4255A4;
+    border: 3px solid none;
+    border-radius: 50%;  
+ }
+ .about-img i{
+        margin: 45px;
+        font-size: 20px;
+        padding: 20px;
+        color: white;
+        background-color: #fd7e14;
+        border: 3px solid none;
+        border-radius: 50%; 
+ }
+ /* subjects  */
+ .subjects-title h2, .take-content h2, .team-title h2{
+    color: #4255A4; 
+    font-size: 35px;
+ }
+.sub-content h3{
+    margin-top:-90px;
+    margin-left: 15px;
+    font-size: 20px;
+    color:white;
+    padding:55px 29px;
+}
+.button{
+    color: #fd7e14;
+    /* margin: 10px 18px;  */
+    padding: 15px 30px;
+} 
+/* take  */
+.take-img{
+    margin-left: -75px;
+}
+.take-content{
+margin-right: -65px;
+}
+
+/* team  */
+.team-img{
+    margin-left: 40px;
+}
+.team-content h5,.goals-content h4{
+    color: #4255A4;
+}
+
+/* footer  */
+.footer{
+    background-color: hsl(277, 80%, 64%);
+    padding-top: 100px;
+    padding-bottom: 13px;
+}
+.social-icon i{
+color: white;
+background-color: rgb(52, 183, 226);
+border-radius: 50%;
+font-size: 30px;
+margin: 5px;
+border: 4px solid none;
+}
+.social-icon i:hover{
+    background-color: #6f42c1;
+} 
+.footer-solutions h5{
+    margin-left: 31px;
+} 
+/* ul li a{
+    padding:10px;
+    margin: 7px;
+} */
+ .footer-last i{
+    color: #C86FFF;
+ }

@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding:4px ;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+body{
+    font-family: "Open Sans", serif;
+}
+li{
+    list-style: none;
+}
+a{ 
+    display: inline-block;
+    text-decoration: none;
+}
+.text-center{
+    text-align: center;
+}
+.logo{
+    max-width: 100%;
+    display: block;
+}
+.row{
+    display: flex;
+}
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.align-items-center{
+    align-items: center;
+}
+.align-content-center{
+    align-content: center;
+}
+
+
+.w-1{
+    width: 100%;
+}
+.w-2{
+    width: 50%;
+}
+.w-3{
+    width: 33.33%;
+}
+.w-4{
+    width: 25%;
+}
+.w-5{
+    width: 20%;
+}
+
+/* header  */
+header{
+    background-color: antiquewhite;
+    position: absolute;
+    top: 5px;
+    right: 0;
+
+}
+nav ul li a{
+    color: black;
+    font-size: 15px;
+    padding: 20px  12px;
+    margin-top: 10px;
+}
+.icon{
+    color: black;
+    font-size: 10px;
+    padding: 25px  203px;
+    margin-top: 14px;
+}
+.btn a{
+    color: white;
+    background-color: black;
+    border: 2px solid none;
+    display: inline; 
+}
+/* benner  */
+.benner-py{
+width: 100%;
+height: 100vh;
+background-image: url(../images/benner.png);
+background-color: #e6e6e6;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+text-align: center;
+
+}
+
+ .benner-co{
+    position: absolute;
+    z-index:99;
+    top: 300px;
+    left: 200px; 
+
+}  
+.benner-content h5{
+    color: black;
+    font-size: 12px;
+}
+.benner-content h1, .product-title h1{
+    color: black;
+    font-size: 45px;
+}
+/* about  */
+.about-content{
+    margin: 30px 35px;
+    padding: 2px 10px;
+    
+}
+.about-logo{
+    border-radius: 30px;
+}
+.about-content p, .about-icon p, .prodoct-title p, .box-content p{
+    color: rgb(68, 58, 58);
+    font-size: 15px;
+
+}
+.about-icon{
+    margin: -3px 25px;
+    padding: -4px 4px; 
+}
+
+.btn2 a {
+color: white;
+background-color: black;
+border: 2px solid none;
+display: inline;
+margin: 10px 25px;
+}
+
+/* prodoct  */
+.prodoct-py{
+    padding: 15px 40px;
+}
+.pro-img{
+    padding:30px 55px;
+}
+
+/* prodocts  */
+  .prodoct-py{
+    /* background-color:  hsl(0, 0%, 90%);  */
+    /* padding: 5px;  */
+    margin-top: 10px; 
+}
+
+.btn3 a{
+    color: white;
+    background-color: black;
+    border: 2px solid none;
+    display: inline;
+    margin: 10px 25px;  
+}
+.prodoct-titles h1{
+    color: black;
+    font-size: 25px;
+    /* padding: 5px;  */
+}
+.prodoct-titles p{
+    color: rgb(68, 58, 58);
+    font-size: 15px;  
+}
+.prodoct-titles {
+    margin: 23px 25px;
+    padding: 0px 2px;
+}
+/* box  */
+.box {
+padding: -3px 4px;
+margin: -13px 4px;
+}
+.box-content h1{
+color: black;
+font-size: 25px;
+}
+.box-content p{
+    color: rgb(68, 58, 58);
+    font-size: 15px;  
+}
+.btn4 a{
+    color: white;
+    background-color: black;
+    border: 2px solid none;
+    display: inline;
+    /* margin: 10px 25px;   */
+}
+/* shop  */
+.shop-title h1{
+    color: black;
+    font-size: 25px;
+    }
+ .shop-title p{
+    color: rgb(68, 58, 58);
+    font-size: 15px;  
+ }
+ /* news    */
+ .news-title h3{
+    color: rgb(68, 58, 58);
+ }
+ .news-title h1{
+    color: black;
+    font-size: 25px;
+    }
+/* .news-content h3{
+    color: black;
+    font-size: 17px;
+} */
+.news-content p{
+    color: rgb(68, 58, 58);
+    font-size: 15px;
+}
+.btn5 a{
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+}
+/* follow  */
+.follow-py{
+    background-color:#f3e9e9;
+
+    
+  
+ 
+}
+.follow-co p, .follow-con p{
+    color: rgb(68, 58, 58);
+}
+.btn6 a{
+    color:black;
+    border: 2px solid black;
+    margin: 2px;
+}
+/* footer  */
+.footer-py{
+    background-color:lightgray;
+    
+}
+.btn7 a{
+    font-size: 14px;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+}
+.footer-contents p{
+    color: black;
+}

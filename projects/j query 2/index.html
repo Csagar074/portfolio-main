@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashmin</title>
+    <!-- apexchart css  -->
+    <link rel="stylesheet" href="css/apexcharts.css" type="text/css">
+    <!-- remix icon  -->
+    <link rel="stylesheet" href="remix/remixicon.css" type="text/css">
+    <!-- heebo font family -->
+     <link rel="stylesheet" href="fonts/heebo/stylesheet.css" type="text/css">
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!-- max css -->
+    <link rel="stylesheet" href="css/max.css" type="text/css">
+</head>
+
+<body>
+
+
+    <!-- -----------------aside------------------- -->
+    <aside>
+        <div class="nav-logo">
+            <a href="javasacript:void(0)" class="d-flex align-items-center">
+                <i class="ri-user-settings-fill"></i>
+                <h1>DarkPan</h1>
+            </a>
+        </div>
+        <div class="profile d-flex align-items-center">
+            <div class="profile-img">
+                <img src="images/user.jpg" alt="user" title="user">
+                <div class="profile-round"></div>
+            </div>
+            <div class="profile-content">
+                <h4>Jhon Doe</h4>
+                <p>Admin</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="javascript:void(0)" class="active"><i class="ri-speed-up-fill"></i>Dashboard</a></li>
+                <li><a href="javascript:void(0)"><i class="ri-mac-line"></i> Elements</a></li>
+                <li><a href="javascript:void(0)"><i class="ri-layout-grid-2-fill"></i> Widgets</a></li>
+                <li><a href="javascript:void(0)"><i class="ri-keyboard-fill"></i> Forms</a></li>
+                <li><a href="javascript:void(0)"><i class="ri-table-line"></i> Tables</a></li>
+                <li><a href="javascript:void(0)"><i class="ri-line-chart-line"></i> Charts</a></li>
+                <li><a href="javascript:void(0)"><i class="ri-file-text-line"></i> Pages</a></li>
+                <li><a href="Registration form.html"><i class="ri-registered-fill"></i> Registration</a></li>
+                <li><a href="Login form.html"><i class="ri-login-circle-line"></i> Login</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <!-- -----------------Deshbord------------------- -->
+    <div class="main-deshbord">
+        <header>
+            <div class="d-flex justify-space-between align-items-center">
+                <div class="search-icon d-flex align-items-center">
+                    <a href="javascript:void(0)">
+                        <i class="ri-menu-fill"></i>
+                    </a>
+                    <form>
+                        <input type="text" placeholder="Search">
+                    </form>
+                </div>
+                <div class="social-meassges ">
+                    <ul class="d-flex align-items-center">
+                        <li><a href="javascript:void(0)"><i class="ri-mail-fill"></i>Messages</a><i
+                                class="ri-arrow-down-s-line"></i></li>
+                        <li><a href="javascript:void(0)"><i class="ri-notification-3-fill"></i>Notificatin</a><i
+                                class="ri-arrow-down-s-line"></i></li>
+                        <li>
+                            <a href="javascript:void(0)" class="d-flex align-items-center">
+                                <img src="images/user.jpg" alt="user" title="user">
+                                <span>Jhon Doe <i class="ri-arrow-down-s-line"></i></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- deashbord  -->
+         
+        <div class="deashbord">
+            <div class="row">
+                <div class="w-4 w-md-2 w-sm-1">
+                    <div class="deashbord-item d-flex justify-space-between align-items-center">
+                        <i class="ri-line-chart-fill"></i>
+                        <div class="deashbord-title">
+                            <h3>Today Sale</h3>
+                            <p>$1234</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-4 w-md-2 w-sm-1">
+                    <div class="deashbord-item d-flex justify-space-between align-items-center">
+                        <i class="ri-bar-chart-grouped-fill"></i>
+                        <div class="deashbord-title">
+                            <h3>Today Sale</h3>
+                            <p>$1234</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-4 w-md-2 w-sm-1">
+                    <div class="deashbord-item d-flex justify-space-between align-items-center">
+                        <i class="ri-line-chart-line"></i>
+                        <div class="deashbord-title">
+                            <h3>Today Revenue</h3>
+                            <p>$1234</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-4 w-md-2 w-sm-1">
+                    <div class="deashbord-item d-flex justify-space-between align-items-center">
+                        <i class="ri-pie-chart-2-fill"></i>
+                        <div class="deashbord-title">
+                            <h3>Total Revenue</h3>
+                            <p>$1234</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Charts  -->
+             <div class="charts">
+                <div class="row">
+                    <div class="w-2 w-md-1">
+                        <div class="worldwide-sales">
+                            <div class="worldwide-sales-title d-flex align-items-center justify-space-between">
+                                <h3>Worldwide Sales</h3>
+                                <a href="javascript:void(0)">Show All</a>
+                            </div>
+                            <div id="chart"></div>
+                        </div>
+                    </div>
+                    <div class="w-2 w-md-1">
+                        <div class="worldwide-sales">
+                            <div class="worldwide-sales-title d-flex align-items-center justify-space-between">
+                                <h3>Worldwide Sales</h3>
+                                <a href="javascript:void(0)">Show All</a>
+                            </div>
+                            <div id="chart2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- Recent Salse  -->
+            <div class="user-data">
+                <div class="data-title d-flex align-items-center justify-space-between">
+                    <h3> Recent Salse</h3>
+                    <a href="javascript:void(0)">Show All</a>
+                </div>
+                <table width="100%" border="1" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox"></th>
+                            <th>Date</th>
+                            <th>Invoice</th>
+                            <th>Customer</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody align="center">
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>01 Jan 2045</td>
+                            <td>INV-0123</td>
+                            <td>Jhon Doe</td>
+                            <td>$123</td>
+                            <td>paid</td>
+                            <td>
+                                <a href="javascript:void(0)">Detail</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>01 Jan 2045</td>
+                            <td>INV-0123</td>
+                            <td>Jhon Doe</td>
+                            <td>$123</td>
+                            <td>paid</td>
+                            <td>
+                                <a href="javascript:void(0)">Detail</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>01 Jan 2045</td>
+                            <td>INV-0123</td>
+                            <td>Jhon Doe</td>
+                            <td>$123</td>
+                            <td>paid</td>
+                            <td>
+                                <a href="javascript:void(0)">Detail</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>01 Jan 2045</td>
+                            <td>INV-0123</td>
+                            <td>Jhon Doe</td>
+                            <td>$123</td>
+                            <td>paid</td>
+                            <td>
+                                <a href="javascript:void(0)">Detail</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>01 Jan 2045</td>
+                            <td>INV-0123</td>
+                            <td>Jhon Doe</td>
+                            <td>$123</td>
+                            <td>paid</td>
+                            <td>
+                                <a href="javascript:void(0)">Detail</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- information  -->
+            <div class="messages">
+                <div class="row">
+                    <div class="w-3 w-lg-2 w-md-1 w-sm-1">
+                        <div class="information">
+                            <div class="messages-content">
+                                <div class="messaage-title d-flex align-items-center justify-space-between">
+                                    <h3>Messages</h3>
+                                    <a href="javascript:void(0)">Show All</a>
+                                </div>
+                            </div>
+                            <div class="user-messages d-flex align-items-center">
+                                <div class="user-img">
+                                    <img src="images/user.jpg" alt="user" title="user">
+                                    <div class="profile-round"></div>
+                                </div>
+                                <div class="user-content">
+                                    <div class="d-flex justify-space-between">
+                                        <h4>Jhon Doe</h4>
+                                        <span>15 minutes ago</span>
+                                    </div>
+                                    <p>Short message goes here..</p>
+                                </div>
+                            </div>
+                            <div class="user-messages-2 d-flex align-items-center">
+                                <div class="user-img">
+                                    <img src="images/user.jpg" alt="user" title="user">
+                                    <div class="profile-round"></div>
+                                </div>
+                                <div class="user-content">
+                                    <div class="d-flex justify-space-between">
+                                        <h4>Jhon Doe</h4>
+                                        <span>15 minutes ago</span>
+                                    </div>
+                                    <p>Short message goes here..</p>
+                                </div>
+                            </div>
+                            <div class="user-messages-3 d-flex align-items-center">
+                                <div class="user-img">
+                                    <img src="images/user.jpg" alt="user" title="user">
+                                    <div class="profile-round"></div>
+                                </div>
+                                <div class="user-content">
+                                    <div class="d-flex justify-space-between">
+                                        <h4>Jhon Doe</h4>
+                                        <span>15 minutes ago</span>
+                                    </div>
+                                    <p>Short message goes here..</p>
+                                </div>
+                            </div>
+                            <div class="user-messages-4 d-flex align-items-center">
+                                <div class="user-img">
+                                    <img src="images/user.jpg" alt="user" title="user">
+                                    <div class="profile-round"></div>
+                                </div>
+                                <div class="user-content">
+                                    <div class="d-flex justify-space-between">
+                                        <h4>Jhon Doe</h4>
+                                        <span>15 minutes ago</span>
+                                    </div>
+                                    <p>Short message goes here..</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-3 w-lg-2 w-md-1 w-sm-1">
+                        <div class="cala information">
+                            <div class="messages-content">
+                                <div class="messaage-title d-flex align-items-center justify-space-between">
+                                    <h3>Messages</h3>
+                                    <a href="javascript:void(0)">Show All</a>
+                                </div>
+                                <div class="calendar" align="center">
+                                    <div class="calendar__month">
+                                        <div class="cal-month__previous"> < </div>
+                                        <div class="cal-month__current"></div>
+                                        <div class="cal-month__next">></div>
+                                    </div>
+                                    <div class="calendar__head">
+                                        <div class="cal-head__day"></div>
+                                        <div class="cal-head__day"></div>
+                                        <div class="cal-head__day"></div>
+                                        <div class="cal-head__day"></div>
+                                        <div class="cal-head__day"></div>
+                                        <div class="cal-head__day"></div>
+                                        <div class="cal-head__day"></div>
+                                    </div>
+                                    <div class="calendar__body">
+                                        <div class="cal-body__week">
+                                            <div class="cal-body__day"></div>
+                                            <div class="cal-body__day"></div>
+                                            <div class="cal-body__day"></div>
+                                            <div class="cal-body__day"></div>
+                                            <div class="cal-body__day"></div>
+                                            <div class="cal-body__day"></div>
+                                            <div class="cal-body__day"></div>
+                                        </div>
+                                        <div class="cal-body__week">
+                                            <div class="cal-body__day"></div>
+                                            <div class="cal-body__day"></div>
+                                            <div class="cal-body__day"></div>
+                                            <div class="cal-body__day"></div>
+                                            <div class="cal-body__day"></div>
+                                            <div class="cal-body__day"></div>
+                                            <div class="cal-body__day"></div>
+                                        </div>
+                                        <div class="cal-body__week">
+                                            <div class="cal-body__day"></div>
+                                            <div class="cal-body__day"></div>
+                                            <div class="cal-body__day"></div>
+                                            <div class="cal-body__day"></div>
+                                            <div class="cal-body__day"></div>
+                                            <div class="cal-body__day"></div>
+                                            <div class="cal-body__day"></div>
+                                        </div>
+                                        <div class="cal-body__week">
+                                            <div class="cal-body__day"></div>
+                                            <div class="cal-body__day"></div>
+                                            <div class="cal-body__day"></div>
+                                            <div class="cal-body__day"></div>
+                                            <div class="cal-body__day"></div>
+                                            <div class="cal-body__day"></div>
+                                            <div class="cal-body__day"></div>
+                                        </div>
+                                        <div class="cal-body__week">
+                                            <div class="cal-body__day"></div>
+                                            <div class="cal-body__day"></div>
+                                            <div class="cal-body__day"></div>
+                                            <div class="cal-body__day"></div>
+                                            <div class="cal-body__day"></div>
+                                        </div>
+                                        <div class="cal-body__week">
+                                            <div class="cal-body__day"></div>
+                                            <div class="cal-body__day"></div>
+                                            <div class="cal-body__day"></div>
+                                            <div class="cal-body__day"></div>
+                                            <div class="cal-body__day"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-3 w-lg-2 w-md-1 w-sm-1">
+                        <div class="information">
+                            <div class="messages-content">
+                                <div class="messaage-title d-flex align-items-center justify-space-between">
+                                    <h3>To Do List</h3>
+                                    <a href="javascript:void(0)">Show All</a>
+                                </div>
+
+                            </div>
+                            <div class="form">
+                                <form>
+                                    <input type="text" placeholder="Enter task">
+                                    <a href="javascript:void(0)">Add</a>
+                                    <div class="rrr">
+                                        <input type="checkbox"> Short task goes here...<i class="ri-close-line"></i>
+                                    </div>
+                                    <div class="rrr">
+                                        <input type="checkbox"> Short task goes here...<i class="ri-close-line"></i>
+                                    </div>
+                                    <div class="rrr">
+                                        <input type="checkbox"> Short task goes here...<i class="ri-close-line"></i>
+                                    </div>
+                                    <div class="rrr">
+                                        <input type="checkbox"> Short task goes here...<i class="ri-close-line"></i>
+                                    </div>
+                                    <div class="rrr">
+                                        <input type="checkbox"> Short task goes here...<i class="ri-close-line"></i>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer   -->
+            <footer>
+                <div class="d-flex align-items-center justify-space-between">
+                    <p>© <span>Your Site Name</span>, All Right Reserved.</p>
+                    <div>
+                        <p style="margin-bottom: 10px;">Designed By <span>HTML Codex</span></p>
+                        <p>Distributed By: <span>ThemeWagon</span></p>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- j-query cdn  -->
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <!-- calander js -->
+    <script src="js/moment-with-locales.js" type="text/javascript"></script>
+    <!-- apexchart cdn  -->
+    <script src="js/apexcharts.min.js" type="text/javascript"></script>
+    <script>
+        // CHART2 
+        var options = {
+            series: [{
+                name: 'salse',
+                data: [31, 40, 28, 51, 42, 109, 100]
+            }, {
+                name: 'revenue',
+                data: [11, 32, 45, 32, 34, 52, 41]
+            }],
+            chart: {
+                height: 350,
+                type: 'area'
+            },
+            dataLabels: {
+                enabled: false
+            },
+            stroke: {
+                curve: 'smooth',
+                colors: ['']
+            },
+            fill: {
+                opacity: 1,
+            },
+            colors: ['#009cff', '#0dcaf0'],
+            xaxis: {
+                type: 'datetime',
+                categories: ['2016', '2017', '2018', '2019', '2020', '2021', '2022'],
+            },
+            tooltip: {
+                x: {
+                    format: 'dd/MM/yy HH:mm'
+                },
+            },
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart2"), options);
+        chart.render();
+
+
+
+        // CHART1 
+        var options = {
+            series: [{
+                name: 'USA',
+                data: [44, 55, 57, 56, 61, 58, 63],
+
+            }, {
+                name: 'UK',
+                data: [76, 85, 101, 98, 87, 105, 91]
+            }, {
+                name: 'AU',
+                data: [35, 41, 36, 26, 45, 48, 52]
+            }],
+            chart: {
+                type: 'bar',
+                height: 350
+            },
+            plotOptions: {
+                bar: {
+                    horizontal: false,
+                    columnWidth: '55%',
+                    endingShape: 'rounded'
+                },
+            },
+            dataLabels: {
+                enabled: false
+            },
+            stroke: {
+                show: true,
+                width: 1,
+                colors: ['']
+            },
+            xaxis: {
+                categories: ['2016', '2017', '2018', '2019', '2020', '2021', '2022'],
+            },
+            fill: {
+                opacity: 1,
+            },
+            colors: ['#009cff', '#0dcaf0', '#0dcaf0'],
+            tooltip: {
+                y: {
+                    formatter: function (val) {
+                        return "$ " + val + " thousands"
+                    }
+                }
+            }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
+
+        // calender
+        class Calendar {
+
+            constructor() {
+                this.monthDiv = document.querySelector('.cal-month__current')
+                this.headDivs = document.querySelectorAll('.cal-head__day')
+                this.bodyDivs = document.querySelectorAll('.cal-body__day')
+                this.nextDiv = document.querySelector('.cal-month__next')
+                this.prevDiv = document.querySelector('.cal-month__previous')
+            }
+
+            init() {
+                moment.locale(window.navigator.userLanguage || window.navigator.language)
+
+                this.month = moment()
+                this.today = this.selected = this.month.clone()
+                this.weekDays = moment.weekdaysShort(true)
+
+                this.headDivs.forEach((day, index) => {
+                    day.innerText = this.weekDays[index]
+                })
+
+                this.nextDiv.addEventListener('click', _ => { this.addMonth() })
+                this.prevDiv.addEventListener('click', _ => { this.removeMonth() })
+
+                this.bodyDivs.forEach(day => {
+                    day.addEventListener('click', e => {
+                        const date = +e.target.innerHTML < 10 ? `0${e.target.innerHTML}` : e.target.innerHTML
+
+                        if (e.target.classList.contains('cal-day__month--next')) {
+                            this.selected = moment(`${this.month.add(1, 'month').format('YYYY-MM')}-${date}`)
+                        } else if (e.target.classList.contains('cal-day__month--previous')) {
+                            this.selected = moment(`${this.month.subtract(1, 'month').format('YYYY-MM')}-${date}`)
+                        } else {
+                            this.selected = moment(`${this.month.format('YYYY-MM')}-${date}`)
+                        }
+
+                        this.update()
+                    })
+                })
+
+                this.update()
+            }
+
+            update() {
+                this.calendarDays = {
+                    first: this.month.clone().startOf('month').startOf('week').date(),
+                    last: this.month.clone().endOf('month').date()
+                }
+
+                this.monthDays = {
+                    lastPrevious: this.month.clone().subtract(1, 'months').endOf('month').date(),
+                    lastCurrent: this.month.clone().endOf('month').date()
+                }
+
+                this.monthString = this.month.clone().format('MMMM YYYY')
+
+                this.draw()
+            }
+
+            addMonth() {
+                this.month.add(1, 'month')
+
+                this.update()
+            }
+
+            removeMonth() {
+                this.month.subtract(1, 'month')
+
+                this.update()
+            }
+
+            draw() {
+                this.monthDiv.innerText = this.monthString
+
+                let index = 0
+
+                if (this.calendarDays.first > 1) {
+                    for (let day = this.calendarDays.first; day <= this.monthDays.lastPrevious; index++) {
+                        this.bodyDivs[index].innerText = day++
+
+                        this.cleanCssClasses(false, index)
+
+                        this.bodyDivs[index].classList.add('cal-day__month--previous')
+                    }
+                }
+
+                let isNextMonth = false
+                for (let day = 1; index <= this.bodyDivs.length - 1; index++) {
+                    if (day > this.monthDays.lastCurrent) {
+                        day = 1
+                        isNextMonth = true
+                    }
+
+                    this.cleanCssClasses(true, index)
+
+                    if (!isNextMonth) {
+                        if (day === this.today.date() && this.today.isSame(this.month, 'day')) {
+                            this.bodyDivs[index].classList.add('cal-day__day--today')
+                        }
+
+                        if (day === this.selected.date() && this.selected.isSame(this.month, 'month')) {
+                            this.bodyDivs[index].classList.add('cal-day__day--selected')
+                        }
+
+                        this.bodyDivs[index].classList.add('cal-day__month--current')
+                    } else {
+                        this.bodyDivs[index].classList.add('cal-day__month--next')
+                    }
+
+                    this.bodyDivs[index].innerText = day++
+                }
+            }
+
+            cleanCssClasses(selected, index) {
+                this.bodyDivs[index].classList.contains('cal-day__month--next') &&
+                    this.bodyDivs[index].classList.remove('cal-day__month--next')
+                this.bodyDivs[index].classList.contains('cal-day__month--previous') &&
+                    this.bodyDivs[index].classList.remove('cal-day__month--previous')
+                this.bodyDivs[index].classList.contains('cal-day__month--current') &&
+                    this.bodyDivs[index].classList.remove('cal-day__month--current')
+                this.bodyDivs[index].classList.contains('cal-day__day--today') &&
+                    this.bodyDivs[index].classList.remove('cal-day__day--today')
+                if (selected) {
+                    this.bodyDivs[index].classList.contains('cal-day__day--selected') &&
+                        this.bodyDivs[index].classList.remove('cal-day__day--selected')
+                }
+            }
+        }
+
+        const cal = new Calendar()
+        cal.init()
+
+        // add class 
+        $(document).ready(function () {
+            $(".search-icon a").click(function () {
+                $(".main-deshbord").toggleClass('add')
+            });
+        });
+    </script>
+</body>
+
+</html>

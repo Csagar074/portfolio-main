@@ -1,0 +1,99 @@
+:root{
+    color: var(--bs-warning);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", serif;
+}
+li{
+    list-style: none;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+/* header  */
+nav ul li a{
+    font-size: 18px;
+}
+nav ul li:hover a{
+    color:var(--bs-warning);
+}
+
+/* benner  */
+.slide1, .slide2, .slide3, .slide4, .slide5{
+    background-image: url('../images/benner-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: center;
+}
+.slide2{
+     background-image: url('../images/benner-2.jpg');
+}
+.slide3{
+     background-image: url('../images/benner-3.jpg');
+}
+.slide4{
+    background-image: url('../images/benner-4.jpg');
+}
+.slide5{
+    background-image: url('../images/benner-5.jpg');
+}
+
+/* choose  */
+.choose{
+    background-color: #116530;
+}
+.choose-logo {
+    /* padding: 10px 5px;  */
+    margin: -81px;
+}
+/* get in touch  */
+.gets{
+    margin-top: 55px;
+}
+.button a{
+    margin-top: 25px;
+}
+  .choose-logo img{
+    transform: scaley(1.0);
+    margin-bottom: 120px;
+    margin-left: 60px;
+    
+  }
+
+.testimonials-img a img{
+    width: 25%;
+    height: 25%;
+     border-radius: 50%;
+     /* border: 1px solid black;  */
+    margin-bottom: 25px;
+}
+/* resent  */
+.recent{
+    background-color: #ffffff;
+}
+.post:hover{
+    color:#198754;
+}
+.btns a:hover{
+    color: #198754;
+}
+
+/* footer */
+ul li:hover{
+    color: #198754;
+}
+.social-icons{
+    margin-left:861px;
+    padding: 5px 5px;
+}
+.social-icons i:hover{
+    color: white;
+    background-color: #198754;
+}
